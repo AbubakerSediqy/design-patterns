@@ -8,11 +8,8 @@ public abstract class Duck {
 
     public abstract void display();
 
-    public void setFlyBehavior(Flyable fb) {
+    public void Duck(Flyable fly, Quackable quack0){
         flyable = fb;
-    }
-    
-    public void setQuackBehavior(Quackable qb) {
         quackable = qb;
     }
 
