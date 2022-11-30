@@ -7,9 +7,17 @@ public class MallarDuck extends Duck {
     Flyable fly;
     Quackable quack;
 
-    public MallarDuck() {
-        quack = new Quack();
-        fly = new FlyNoWay();
+    public voide MallarDuck(Flyable fly, Quackable quack) {
+        this.fly = fly;
+        this.quack = quack;
+    }
+
+    public voide performFly(){
+        fly.fly();
+    }
+
+    public voide performQuack(){
+        quack.Quack();
     }
 
     public void display(){
